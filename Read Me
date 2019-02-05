@@ -1,0 +1,3 @@
+MATLAB R2018b 
+LIM_model is true model (not per unit) includes extra term for dx(2) and dx(4) term
+LIM_thrust_control parameters is true model (not per unit)

@@ -12,7 +12,7 @@ switch flag
       %Parameters
       tau=0.2;
       p = 4;
-      D = 1;
+      D = 4;
       V_base=250; %V
       I_base=200; %A
       Z_base=V_base/I_base;
@@ -33,8 +33,8 @@ switch flag
       Lm = 32.6e-3/L_base;
       %Current calculation
       Q = abs(D*Rr/(Lr*x(5)));
-      %f =(1-exp(-Q*Q_base))/(Q*Q_base);
-      f=0;
+      f =(1-exp(-Q*Q_base))/(Q*Q_base);
+      %f=0;
       A = (Ls-Lm*f)*(Lr-Lm*f)-(Lm)^2*(1-f)^2;
       i_sa = ((Lr-Lm*f)*x(1)-Lm*(1-f)*x(3))/A;
       i_sb = ((Lr-Lm*f)*x(2)-Lm*(1-f)*x(4))/A;
